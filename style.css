@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --grey: rgb(51, 51, 51);
+    --lightGrey: rgb(210, 207, 207);
+    --blue: rgb(69, 237, 252);
+    --golden: rgb(230, 181, 11);
+    --goldenLight: rgba(230, 181, 11, 0.1);
+    --lightBlue: rgba(216, 236, 244, 0.722);
+    --darkBlue: rgb(66, 180, 214);
+}
+
+.container {
+    position: relative;
+}
+
+.header_img {
+    width: 100%;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+}
+
+.profile_pic {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile_name {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+/* content */
+#show_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.show {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid var(--lightGrey);
+    padding: 15px;
+}
+
+.show:first-child {
+    margin-top: 0px;
+}
+
+.show:last-child {
+    margin-bottom: 50px;
+}
+
+.show_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    width: 20%;
+}
+
+.seasons {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: var(--lightBlue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+.show_img, .seasons {
+    width: 100%;
+}
+
+.show_content {
+    width: 80%
+}
+
+.show_head {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--grey)
+}
+
+.show_premier {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.show_description {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--grey);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 15px;
+}
+
+.show_genres {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.genres_head {
+    font-size: 18px;
+    color: var(--grey);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.genres {
+    color: var(--golden);
+    font-size: 16px;
+    background-color: var(--goldenLight);;
+    font-weight: bold;
+    padding: 8px;
+    margin: 0px 4px;
+}
+
+.hours_spent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* episodes */
+.marcar_todo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.marcar_todo_text {
+    margin-left: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 28px;
+    color: var(--grey);
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 15px;
+}
+
+.season_title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--darkBlue);
+
+}
+
+.episode {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.episode_img {
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 25%;
+}
+
+.episode_content {
+    width: 75%;
+}
+
+.episode_heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;
+    color: var(--grey);
+    margin-left: 5px;
+}
+
+.episode_date {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--grey);
+}
+
+.episode_description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--grey);
+}
+
